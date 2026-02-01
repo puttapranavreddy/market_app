@@ -1,0 +1,241 @@
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #f8f7ff;
+  background-color: #0f0f1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #27264a 0%, #0f0f1a 55%);
+  color: #f8f7ff;
+}
+
+.hero {
+  padding: 2.5rem 5vw 4rem;
+  background: linear-gradient(135deg, rgba(109, 94, 246, 0.5), rgba(37, 199, 255, 0.2));
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.cta-button,
+.primary,
+.secondary {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary {
+  background: #ff8a4c;
+  color: #0f0f1a;
+  box-shadow: 0 10px 25px rgba(255, 138, 76, 0.4);
+}
+
+.secondary {
+  background: transparent;
+  color: #f8f7ff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cta-button {
+  background: #ffffff;
+  color: #1b1b2a;
+}
+
+.primary:hover,
+.secondary:hover,
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 5vw 4rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .panel.stats {
+    grid-column: span 2;
+  }
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(15, 15, 26, 0.4);
+  backdrop-filter: blur(16px);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ad-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.ad-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.ad-form input,
+.ad-form select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: rgba(15, 15, 26, 0.6);
+  color: #f8f7ff;
+}
+
+.preview {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.preview-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.preview-card.sunrise {
+  background: linear-gradient(135deg, rgba(255, 154, 118, 0.5), rgba(255, 214, 141, 0.15));
+}
+
+.preview-card.ocean {
+  background: linear-gradient(135deg, rgba(92, 219, 255, 0.5), rgba(44, 105, 194, 0.2));
+}
+
+.preview-card.midnight {
+  background: linear-gradient(135deg, rgba(91, 76, 255, 0.4), rgba(23, 23, 48, 0.7));
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.preview-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.preview-benefit {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-cta {
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #1b1b2a;
+}
+
+.insights {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.insights h4 {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.insights p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stats h2 {
+  margin-bottom: 1.5rem;
+}
+
+.stat-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.stat-grid h3 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer {
+  padding: 2.5rem 5vw 3rem;
+  text-align: center;
+  background: rgba(15, 15, 26, 0.9);
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
