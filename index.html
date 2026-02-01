@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarketSpark Ads</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">MarketSpark</span>
+        <button class="cta-button" id="launchButton">Launch Your Ad</button>
+      </nav>
+      <div class="hero-content">
+        <h1>Turn browsers into buyers.</h1>
+        <p>
+          MarketSpark is a lightweight advertising studio for small brands. Build
+          fast campaigns, preview your message, and share instantly.
+        </p>
+        <div class="hero-actions">
+          <button class="primary" id="previewButton">Preview Campaign</button>
+          <button class="secondary" id="createButton">Create Ad Copy</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel" id="adPanel">
+        <div class="panel-header">
+          <h2>Ad Builder</h2>
+          <span class="badge">Live Preview</span>
+        </div>
+        <form class="ad-form" id="adForm">
+          <label>
+            Product name
+            <input type="text" name="product" placeholder="Glow Coffee" required />
+          </label>
+          <label>
+            Key benefit
+            <input
+              type="text"
+              name="benefit"
+              placeholder="Energy in every sip"
+              required
+            />
+          </label>
+          <label>
+            Call to action
+            <input type="text" name="cta" placeholder="Shop now" required />
+          </label>
+          <label>
+            Theme
+            <select name="theme">
+              <option value="sunrise">Sunrise</option>
+              <option value="ocean">Ocean</option>
+              <option value="midnight">Midnight</option>
+            </select>
+          </label>
+          <button class="primary" type="submit">Update Preview</button>
+        </form>
+      </section>
+
+      <section class="panel preview" aria-live="polite">
+        <div class="preview-card" id="previewCard">
+          <p class="eyebrow" id="previewTag">Sponsored</p>
+          <h3 id="previewTitle">Glow Coffee</h3>
+          <p class="preview-benefit" id="previewBenefit">
+            Energy in every sip.
+          </p>
+          <button class="preview-cta" id="previewCta">Shop now</button>
+        </div>
+        <div class="insights">
+          <div>
+            <h4>Estimated Reach</h4>
+            <p id="reachValue">12.4k</p>
+          </div>
+          <div>
+            <h4>Audience Match</h4>
+            <p id="matchValue">89%</p>
+          </div>
+          <div>
+            <h4>Launch Window</h4>
+            <p id="windowValue">Today, 3:00 PM</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel stats">
+        <h2>Why brands choose MarketSpark</h2>
+        <div class="stat-grid">
+          <div>
+            <h3>3x</h3>
+            <p>faster campaign launches</p>
+          </div>
+          <div>
+            <h3>48%</h3>
+            <p>lower acquisition costs</p>
+          </div>
+          <div>
+            <h3>24/7</h3>
+            <p>insights dashboard</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Ready to get noticed? Build your first ad in minutes.</p>
+      <button class="primary" id="footerButton">Start Free Trial</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
